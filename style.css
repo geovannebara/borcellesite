@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #6a11cb, #8e54e9, #c471ed); /* degradê roxo bonito */
+  color: black;
+}
+
+header {
+  background: purple;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: black;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+.produtos {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carrinho {
+  flex: 1;
+  background: palegreen;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: cornflowerblue;
+  font-size: 0.9rem;
+}
